@@ -68,7 +68,7 @@ let currentThreadId = null;
 
 
 function startConversation() {
-    fetch('https://chatbot-for-discover-tree-samuelsicking.replit.app/start', {
+    fetch('https://chatbot-for-discover-tree.replit.app/start', {
         method: 'GET'
     })
     .then(response => response.json())
@@ -133,7 +133,7 @@ document.getElementById('chat-form').addEventListener('submit', function(event) 
     sendInputToGAS3(userMessage, true);
     document.getElementById('chatbox').appendChild(loadingElement);
 
-    fetch('https://chatbot-for-discover-tree-samuelsicking.replit.app/chat', {
+    fetch('https://chatbot-for-discover-tree.replit.app/chat', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
